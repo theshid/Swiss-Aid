@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:elevation="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/card_foreground"
+    android:id="@+id/list_item_row_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_bis"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginTop="80dp"
+
+
+            />
+
+
+
+            <LinearLayout
+                android:id="@+id/text_container_new"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@+id/image_bis"
+                android:layout_toRightOf="@id/image_bis"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp">
+
+                <!--android:layout_weight="slide1"
+                    android:gravity="bottom" -->
+
+
+                <TextView
+                    android:id="@+id/fiche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fiche"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="15dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    tools:text="Shid Insa Issa" />
+
+                <TextView
+                    android:id="@+id/file_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignTop="@+id/name_text_view"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="121dp"
+                    tools:text="Rapport Tchad" />
+
+                <TextView
+                    android:id="@+id/mission_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/name_text_view"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    tools:text="Tchad" />
+
+                <TextView
+                    android:id="@+id/numero_ta_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/name_text_view"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="71dp"
+                    tools:text="0000000000" />
+
+                <TextView
+                    android:id="@+id/time_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/name_text_view"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    tools:text="dd/mm/yyyy" />
+
+
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

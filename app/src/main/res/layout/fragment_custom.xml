@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/unicef"
+    android:orientation="vertical">
+
+    <technolifestyle.com.imageslider.FlipperLayout
+        android:id="@+id/flipper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/banner_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/banner_home_fr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:gravity="center_horizontal"
+        android:text="@string/textview_info_custom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/menu_custom"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:dividerHeight="10.0sp" />
+
+        <Button
+            android:id="@+id/btn_pdf"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/create_pdf" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/white"
+        app:fabSize="normal"
+        app:fabCustomSize="40dp"/>
+
+
+</LinearLayout>

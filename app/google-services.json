@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "604422242664",
+    "firebase_url": "https://swissaid-cfe6e.firebaseio.com",
+    "project_id": "swissaid-cfe6e",
+    "storage_bucket": "swissaid-cfe6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604422242664:android:e835ea0a2de4a10a",
+        "android_client_info": {
+          "package_name": "com.shid.swissaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604422242664-rdqf592gkq2bbis6h5ggfpifesqni3bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZqzRXQ8qzoFzi8bk35MV3T9_XQdQT6DI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

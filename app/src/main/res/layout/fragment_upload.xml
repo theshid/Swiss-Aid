@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.UploadFragment"
+    android:background="@color/unicef">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/banner_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/banner_home_fr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        >
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextNumTA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/EditTextTheme">
+
+    <EditText
+        android:id="@+id/editTextNumTA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:hint="@string/editText_number_upload_fragment"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextMission1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/EditTextTheme">
+
+    <EditText
+        android:id="@+id/editTextMission"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_centerVertical="true"
+        android:hint="@string/editText_mission"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextFileName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/EditTextTheme">
+
+    <EditText
+        android:id="@+id/editTextFileName"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:inputType="textCapSentences"
+        android:hint="@string/editText_name_file_upload_fragment"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/buttonUploadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_view"
+        android:background="@drawable/btn"
+        android:text="@string/btn_upload_upload_fragment" />
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="390dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_file_selected_upload_fragment"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

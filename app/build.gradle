@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.shid.swissaid"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    implementation 'androidx.annotation:annotation:1.0.0-beta01'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+
+    //Firebase Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging:17.4.0'
+
+    //Firestore
+    implementation 'com.google.firebase:firebase-firestore:18.0.0'
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+
+    //Google play service
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
+    //Rx downloader
+    implementation 'com.github.esafirm:rxdownloader:2.0.0'
+
+    //Localization library
+    implementation 'com.akexorcist:localizationactivity:1.2.2'
+
+    //Dot loading Library
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    //Retrofit and Retrofit Converter
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //Circle ImageView
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //Material EditText
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    // Google play services for location information
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //Firebase Real time database
+    implementation 'com.google.firebase:firebase-database:16.1.0'
+
+    implementation 'com.nex3z:notification-badge:1.0.2'
+
+    //TouchViewImage Library
+    implementation 'com.github.MikeOrtiz:TouchImageView:2.1.1'
+
+    //
+    implementation('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true;
+    }
+
+    //iText and pdfView
+    implementation 'com.itextpdf:itextg:5.5.10'
+
+    //Form creation Library
+    implementation 'com.ernestoyaquello.stepperform:vertical-stepper-form:2.1.1'
+
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+
+    //Google Play Services for Maps
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+
+    // Google play services for location information
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //Google Direction
+    implementation 'com.google.maps:google-maps-services:0.2.7'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
+
+
+    //Room
+    def room_version = "2.1.0-alpha07"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation 'com.github.technolifestyle:imageslider:1.5.6'
+
+
+
+    implementation 'androidx.multidex:multidex:2.0.0'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/unicef"
+    tools:context=".UI.MyReportsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_keyboard_backspace_24"
+        app:popupTheme="@style/Theme.Popup"
+        app:theme="@style/Theme.GuidelinesCompat.Toolbar"
+        app:title="@string/toolbar_title_custom_fragment"
+        app:titleTextColor="@color/black"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn"
+        android:text="@string/filter"/>
+
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group_my"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_mission_my"
+            android:text="@string/check_mission"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_number_my"
+            android:text="@string/check_number"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_date_my"
+            android:text="@string/check_date"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+    </RadioGroup>
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe_my"
+        android:layout_marginTop="25dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycleview_my"
+            android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

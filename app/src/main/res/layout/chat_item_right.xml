@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/convo"
+            >
+            <TextView
+                android:id="@+id/show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="04/11/1988 9:21"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/show_message"
+                android:layout_below="@id/show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_right"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="Hello"
+                android:textSize="18sp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/show_document"
+                android:layout_below="@id/show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_document"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="Hello"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/image_message"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/show_time"
+                    android:scaleType="centerCrop"
+                    tools:src="@mipmap/icon"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_seen"
+            android:layout_below="@id/convo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            tools:text="Seen"/>
+    </RelativeLayout>
+
+</RelativeLayout>

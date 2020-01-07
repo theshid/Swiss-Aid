@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Swiss Aid</string>
+    <string name="google_map_api_key">AIzaSyDgZz336_crmB51ebkAP_4lhQGMAMHsiUg</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //Bottom navigation View layout
+    <string name="title_home">Accueil</string>
+    <string name="title_report">Rapport</string>
+    <string name="title_backup">Mise en ligne</string>
+    <string name="title_setting">Paramètre</string>
+    <string name="title_template">Modèle Rapport</string>
+    <string name="collection_users">Users</string>
+
+
+    //Login activity Layout
+    <string name="create"><u>Nouveau? S\'inscrire maintenant</u>.</string>
+    <string name="reset"><u> Mot de passe oublié?</u></string>
+    <string name="hint_email_login">Email</string>
+    <string name="hint_password_login">Mot de passe</string>
+    <string name="btn_login">Se connecter</string>
+
+    //Login Activity
+    <string name="toast_authenticate">Authentifié avec:</string>
+    <string name="toast_combinaison">Mauvaise combinaison</string>
+    <string name="toast_logged_in">Connecté avec succès</string>
+    <string name="toast_verify_account">Vous devez valider votre compte afin d\'avoir accès</string>
+    <string name="toast_log_fail">Échec de la connexion</string>
+    <string name="dialog_authenticate">Authentification...</string>
+    <string name="error_email_login">Entrez une adresse e-mail valide</string>
+    <string name="error_email_unicef">Vous devez être un membre l\'Unicef pour avoir accès</string>
+    <string name="error_email_unicef1">Vous devez être un membre Plan International pour avoir accès</string>
+    <string name="error_password_login">"Entre 6 et 20 caractères alphanumeriques "</string>
+    <string name="snack_check_internet">Vérifiez votre connexion Internet</string>
+
+    //Sign up activity layout
+    <string name="already_member"><u>Déjà membre? S\'identifier</u>.</string>
+    <string name="hint_name_sign_up">Nom</string>
+    <string name="hint_email_sign_up">Email</string>
+    <string name="hint_password_sign_up">Mot de passe</string>
+    <string name="hint_repassword_sign_up">Retaper mot de passe</string>
+    <string name="btn_create_account_sign_up">Créer un compte</string>
+
+    //Sign up activity
+    <string name="dialog_create_account_sign_up">Creation du compte...</string>
+    <string name="snack_error_sign_up">Impossible d\'ajouter utilisateur, veuillez réessayer</string>
+    <string name="snack_email_used_sign_up">Adresse e-mail déjà utilisée.</string>
+    <string name="toast_error_sign_up">Impossible de créer le compte, veuillez regarder les messages d\'erreurs</string>
+    <string name="error_name_sign_up">Nom doit comporter au moins 4 caractères</string>
+    <string name="error_email_valid_sign_up">Entrez une adresse e-mail valide</string>
+    <string name="error_email_unicef_sign_up">Vous devez être membre de l\'Unicef.</string>
+    <string name="error_email_unicef_sign_up1">Vous devez être membre de Plan International.</string>
+    <string name="error_password_sign_up">Entre 6 et 20 caractères alphanumériques</string>
+    <string name="error_password_match_sign_up">Le mot de passe ne correspond pas</string>
+
+    //Verify activity layout
+    <string name="textview_verify_activity">Un e-mail vous a été envoyé afin de valider votre compte</string>
+
+    //Verify activity
+    <string name="toast_verification_sent">"email de vérification envoyé à "</string>
+    <string name="toast_fail_verification">Échec de l\'envoi de l\'émail de vérification.</string>
+
+    //Reset Password activity layout
+    <string name="btn_reset_password">Réinitialiser le mot de passe</string>
+    <string name="btn_back_reset_password"><u>Retour</u></string>
+    <string name="textview_forgot_password">Réinitialiser le mot de passe</string>
+    <string name="textview_enter_email_reset_password">Veuiller entrer votre adresse e-mail:</string>
+    <string name="hint_email_reset_password">xxxxx@swissaid.ch</string>
+
+
+    //Reset Password activity
+    <string name="toast_enter_email_reset_password">Entrez votre email enregistré</string>
+    <string name="toast_instruction_reset_password">Nous vous avons envoyé les instructions pour réinitialiser votre mot de passe</string>
+    <string name="toast_fail_instruction_reset_password">Échec de l\'envoi de l\'email!</string>
+
+    //ChangeName activity layout
+    <string name="btn_update_name_changeName">Mise à jour du nom</string>
+    <string name="edit_text_new_email_change_name">Entrez votre email</string>
+    <string name="new_name">Entrez votre nouveau nom</string>
+    <string name="textview_current_name_change_name">Nom actuel</string>
+    <string name="toolbar_title_change_name">Mise à jour du nom</string>
+
+    //ChangeName activity
+    <string name="toast_update_fail_change_name">Échec de la mise à jour, vérifiez les erreurs affichées</string>
+    <string name="dialog_update_change_name">Mise à jour du nom...</string>
+    <string name="error_name_change_name">6 caractères minimum</string>
+    <string name="snack_update_change_name">mise à jour réussi du nom</string>
+
+    //ChangePassword activity layout
+    <string name="editText_current_password_change_password">Mot de passe actuel</string>
+    <string name="editText_new_password_change_password">Nouveau mot de passe</string>
+    <string name="editText_confirm_password_change_password">Retaper le mot de passe</string>
+    <string name="btn_update_change_password">Modier mot de passe</string>
+    <string name="text_view_forgot_pass_change_password"><u>Mot de passe oublié?</u></string>
+    <string name="toolbar_title_change_password">Modifier mot de passe</string>
+
+    //ChangePassword activity
+    <string name="toast_instruction_change_password">Nous vous avons envoyé les instructions afin de réinitialiser votre mot de passe</string>
+    <string name="toast_instruction_fail_change_password">Échec de l\'envoi de l\'émail! Vérifiez votre connexion</string>
+    <string name="toast_update_fail_change_password">Échec de la mise à jour, vérifiez les erreurs</string>
+    <string name="dialog_update_change_password">Mise à jour du mot de passe...</string>
+    <string name="snack_error_change_password">Une erreur est survenue.Veuillez réessayer</string>
+    <string name="toast_update_change_password">Mot de passe modifié avec succès</string>
+    <string name="snack_incorrect_change_password">mot de passe incorrect</string>
+    <string name="editText_error_change_password">Entre 6 et 20 caractères alphanumériques</string>
+    <string name="error_match_change_passeword">Mot de passe ne correspond pas</string>
+
+
+    //Custom Fragment layout
+    <string name="name_custom">Bienvenue</string>
+    <string name="check_number">"par Nº Projet "</string>
+    <string name="check_mission">par Mission</string>
+    <string name="check_worker">par Nom</string>
+    <string name="check_date">par Date</string>
+    <string name="filter">Choisissez un critère</string>
+    <string name="textview_info_custom">Pour remplir un nouveau rapport, veuillez cliquer sur le boutton en
+    bas à droite</string>
+    <string name="btn_pdf">Visionner Rapport en PDF</string>
+
+    //Custom Fragment
+    <string name="toast_fail_files_custom_fragment">Impossible de récupérer les fichiers</string>
+    <string name="toast_permission_denied_custom_fragment">Veuiller accorder l\'autorisation de stockage</string>
+    <string name="toast_download_custom_fragment">Téléchargement terminé</string>
+    <string name="dialog_title_custom_fragment">Mis à jour:</string>
+    <string name="snack_delete_custom_fragment">Fichier supprimé</string>
+    <string name="snack_error_custom_fragment">Erreur, Vérifiez votre connexion</string>
+    <string name="toolbar_title_custom_fragment">Accueil</string>
+    <string name="menu_custom">Menu</string>
+    <string name="image_null">Vous n\'avez pas selectionné d\'image</string>
+    <array name="rowCustom">
+        <item>Mes Rapports</item>
+        <item>Tous les Rapports</item>
+    </array> //Model Fragment
+    <array name="template">
+        <item>Modèles de Rapport</item>
+        <!--   <item>Modèle en Français</item> -->
+    </array>
+
+    //Submit Dialog
+    <string name="submit">Soumettre Rapport sans pièces jointe(s)</string>
+
+    //Update Dialog
+    <string name="btn_delete_dialog">Supprimer le fichier</string>
+    <string name="btn_download_dialog">Télécharger le fichier</string>
+
+    //Report Fragment layout
+    <string name="toolbar_title_report_fragment">Modèles de Rapport</string>
+    <string name="textview_info_report_fragment">Tous les modèles de rapport sont affichés et peuvent être téléchargés ici en cliquant sur le modèle voulu. Les utilisateurs seront notifiés losrqu\'un nouveau modèle sera mis à disposition.</string>
+
+    //Report Fragment
+
+    <string name="toast_file_fail_report_fragment">Impossible de récupérer les fichiers</string>
+
+    //Settings Fragment layout
+
+    <string name="toolbar_title_setting">Paramètres</string>
+    <string name="general_setting">Paramètres Généraux</string>
+
+    //Setting Fragment
+    <array name="rowSetting">
+        <item>Modifier le nom</item>
+        <item>Modifier mot de passe</item>
+        <item>Changer la Langue</item>
+        <item>Se déconnecter</item>
+    </array>
+
+    //Language dialog layout
+    <string name="dialog_title_lg">Langue</string>
+    <string name="dialog_message_lg">Choisissez une langue:</string>
+    <string name="cancel_lg">Annuler</string>
+
+    //Home list layout
+    <string name="textview_title_home">My Reports</string>
+    <string name="textview_title_home2">All Reports</string>
+
+    ///Upload fragment layout
+    <string name="toolbar_title_upload_fragment">Mettre Rapport en ligne</string>
+    <string name="editText_number_upload_fragment">Entrez le numéro de projet</string>
+    <string name="editText_mission">Entrez le nom de la mission</string>
+    <string name="editText_name_file_upload_fragment">Entrez le nom de votre fichier</string>
+    <string name="btn_upload_upload_fragment">Selectionnez fichier PDF</string>
+    <string name="textview_file_selected_upload_fragment">Aucun fichier selectionné</string>
+
+    //Upload fragment
+    <string name="toast_file_upload_fragment">Aucun fichier choisi</string>
+    <string name="texview_file_upload_fragment">Envoi du fichier avec succès</string>
+    <string name="snack_file_upload_fragment">Envoi du fichier avec succès</string>
+    <string name="snack_error_upload_fragment">Échec de l\'envoi, vérifiez votre connexion Internet</string>
+    <string name="textview_upload_fragment">% Mise en ligne...</string>
+    <string name="error_upload_fragment">Champ ne peut être vide</string>
+    <string name="error_ta_upload_fragment">Numéro de TA est de 10 caractères</string>
+
+    //AllReports activity layout
+    <string name="title_all_reports">Tous les Rapports</string>
+
+    //MyReports activity layout
+    <string name="title_my_reports">Mes Rapports</string>
+
+    //MyReports activity
+    <string name="refresh_my">Actualisation....</string>
+
+    //Log out Dialog
+    <string name="dialog_log_out_title">Quitter</string>
+    <string name="dialog_log_out_message">Êtes-vous sûre de vouloir vous déconnecter?</string>
+    <string name="dialog_log_out_btn_yes">Oui</string>
+    <string name="dialog_log_out_btn_no">Annuler</string>
+
+
+
+
+    <!-- Actions Menu toolbar-->
+    <string name="action_settings">Paramètres</string>
+    <string name="action_help">Aide</string>
+    <string name="action_refresh">Actualiser</string>
+    <string name="action_search">Rechercher</string>
+
+    <!-- List item layout or TestAdapter -->
+    <string name="textView_name"><b>Employé:</b></string>
+    <string name="textView_mission"><b>Nom Mission:</b></string>
+    <string name="textView_date"><b>Soumis le:</b></string>
+    <string name="textView_numero"><b>Nº Projet:</b></string>
+    <string name="textView_fileName"><b>Nom fichier:</b></string>
+    <string name="fiche">Fiche</string>
+
+    <string name="texView_language">Langue:</string>
+
+    //Navigation Drawer menu item
+    <string name="profile">Profil</string>
+    <string name="geolocation">Géolocalisation</string>
+    <string name="chat">Chat</string>
+    <string name="about">À propos</string>
+    <string name="log_out">Se déconnecter</string>
+    <string name="title_menu_nav">Option</string>
+    <string name="feature"> Fonctionalité à venir </string>
+    <string name="switch_status">Vous devez activer le service de géolocalisation pour avoir accès</string>
+    <string name="switch_activate">Service de Géolocalisation activé!</string>
+    <string name="switch_deactivate">Service de Géolocalisation désactivé</string>
+    <string name="switch_title">Activer/Désactivé Service</string>
+
+    //Message Adapter
+    <string name="no_message">Pas de Message</string>
+    <string name="seen">Vu</string>
+    <string name="delivered">Envoyé</string>
+
+    //MainActivity
+    <string name="users">Util.</string>
+    <string name="chats">Disc.</string>
+
+    //Message Activity Layout
+    <string name="type_message">Tapez votre Message</string>
+
+    //Fragment users layout
+    <string name="search">Recherche...</string>
+
+    //Navigation Drawer menu item
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Template</item>
+        <item>Upload</item>
+        <item>Settings</item>
+
+    </array>
+    <string name="unicef_mobile">Unicef Mobile</string>
+    <string name="plan">Swiss Aid</string>
+    <string name="templ">Modèle</string>
+    <string name="toast_dl_start_custom_fragment">Début du téléchargement du Rapport: Vérifiez Notification</string>
+
+    //Message Activity
+    <string name="new_message">Nouveau Message</string>
+    <string name="empty_msg">Vous ne pouvez pas envoyer de message sans contenu</string>
+    <string name="no_image">Aucune image selectionné</string>
+    <string name="failed">Échec</string>
+    <string name="view_location">Voir Position</string>
+    <string name="view_direction">Voir Direction</string>
+    <string name="option_image"> Option Image</string>
+    <string name="option_location">Visionner Carte</string>
+
+    <string name="loading">Chargement</string>
+    <string name="image_msg">📷 Image</string>
+    <string name="view_image">Visionner Image</string>
+    <string name="map_apiKey">AIzaSyAUUbwP8TJwlj6gLS-eW3r3yRlVbcVgSJs</string>
+
+    //Step Form
+    <string name="file">1. Nom du Rapport</string>
+    <string name="name">2. Nom, Titre du voyageur et Section</string>
+
+    <string name="date">4. Dates : </string>
+    <string name="budget">5. Budget Estimé : </string>
+    <string name="iteneraire">6. Itinéraire [veuillez spécifier les/ville (s) ou zones visitées]</string>
+    <string name="membre">7. Autres membres de l’équipe de mission y compris les partenaires</string>
+    <string name="rencontre">8. Personnes rencontrées [si la liste est longue, la mettre en annexe]</string>
+    <string name="objectif">9. Objectifs de la mission</string>
+    <string name="resultat">10. Résultats, contraintes, leçons apprises [Brève description des résultats et/ou contraintes]</string>
+
+
+    <string name="point_action">11. Points d’Actions et leur suivi, indiquer le Responsable et Echéance </string>
+    <string name="responsable">Responsable</string>
+    <string name="echeance">Echéance</string>
+    <string name="suivi_financier">11. Rapport sur le suivi financier et des approvisionnements [réception, utilisation efficiente et conforme au plan, Justifications des dépenses, classement et archivages des documents] et HACT [utilisation de FACE]</string>
+    <string name="point_action2"><![CDATA[12. Points d’Actions et leur suivi — En rapport avec le suivi financier & approvisionnements ]]></string>
+
+
+    <string name="finish">Terminer</string>
+
+    <string name="form_empty_field">(Vide)</string>
+    <string name="form_min_name_char">Au moins %1$d caractère(s)</string>
+    <string name="form_sending_data_message">Recueil d\'information…</string>
+    <string name="form_discard_cancel">Annuler</string>
+    <string name="form_discard">Effacer</string>
+    <string name="form_discard_question">Effacer Rapport?</string>
+    <string name="form_info_will_be_lost">Toute les informations de ce rapport seront perdues</string>
+
+    <string-array name="steps_titles">
+        <item>1. Nom du rappport</item>
+        <item>2. Nom, Titre du voyageur et Section</item>
+        <item>3. Numéro de la TA :</item>
+        <item>4. Dates :</item>
+        <item>5. Budget Estimé :</item>
+        <item>6. Itinéraire [veuillez spécifier les/ville (s) ou zones visitées]</item>
+        <item>7. Autres membres de l’équipe de mission y compris les partenaires</item>
+        <item>8. Personnes rencontrées [si la liste est longue, la mettre en annexe]</item>
+        <item>9. Objectifs de la mission</item>
+        <item>10. Résultats, contraintes, leçons apprises [Brève description des résultats et/ou contraintes]</item>
+        <item>11. Points d’Actions et leur suivi, indiquer le Responsable et Echéance</item>
+
+    </string-array>
+
+    <string-array name="steps_titles1">
+        <item>1. Intitulé du projet :</item>
+        <item>2. Durée du projet :</item>
+        <item>3. Numéro du projet :</item>
+        <item>4. Quels ont été les changements significatifs en lien avec le projet ? (Changements qui influencent les choix stratégiques)
+Situation économique, emploi, chômage, inflation, période transition/ d’excédent.
+Evénements politiques et environnementaux.</item>
+        <item>5. Donner le nombre de bénéficiaires réels directs et indirects, en séparant par genre si possible. Comparez-lez avec la population cible planifiée.</item>
+        <item>6. Qu’est ce qui a été déterminant dans la progression ? illustrez par une action clé /un évènement / une étape/ une ou des personne(s) clé(s).</item>
+        <item>7. Quels obstacles avez-vous rencontré ? Comment les avez-vous surmontés ?</item>
+        <item>8. Le projet a-t-il connu des échecs ? A quel niveau et pourquoi ?</item>
+        <item>9. Quels sont les succès principaux ?</item>
+        <item>10. Passage à l’échelle : y a-t-il eu des adoptions spontanées ou un passage à l’échelle ? Ou voyez-vous des pistes, des potentiels de passage à l’échelle ?</item>
+        <item>11. Quelles sont les leçons apprises après 1, 2 ou 3 ans du projet ? Qu’est ce qui a été inattendu ?
+Quelles conclusions tirez-vous? Quelles perspectives ouvrent-t-elles ?</item>
+        <item>12. Racontez une histoire vécue qui illustre un changement ou un apprentissage (vécu de bénéficiaires, du partenaire local, etc.)</item>
+        <item>13. Qu’est-ce que vous voudriez partager avec d’autres organisations? En quoi cette expérience peut-elle être utile pour d’autres ?</item>
+        <item>14. Qu’avez-vous mis en place pour partager cette expérience?</item>
+        <item>15. Une évaluation du projet a-t-elle eu lieu ? Interne ou externe ? A quelle date ? Si n’a pas encore eu lieu mais est prévue : Des termes de référence ont-ils été rédigés ? Un évaluateur a-t-il été choisi ?Quelle date ?</item>
+        <item>16. Quelles sont les principales recommandations et implications pour une prochaine phase ou des projets similaires ?</item>
+
+    </string-array>
+
+    <string-array name="header_title">
+        <item>Question </item>
+        <item>Réponse</item>
+    </string-array>
+
+    <string name="question">Question</string>
+    <string name="answer">Réponse</string>
+
+
+    <string name="nom_projet">1. Intitulé du projet :</string>
+    <string name="duree_projet">2. Durée du projet : </string>
+    <string name="ta">3. Numéro du Projet : </string>
+    <string name="q1">"4. Quels ont été les changements significatifs en lien avec le projet ? (Changements qui influencent les choix stratégiques) Situation économique, emploi, chômage, inflation, période transition/ d’excédent. Evénements politiques et environnementaux. "</string>
+    <string name="q2">5. Donner le nombre de bénéficiaires réels directs et indirects, en séparant par genre si possible. Comparez-lez avec la population cible planifiée.</string>
+    <string name="q3">6. Qu’est ce qui a été déterminant dans la progression ? illustré par une action clé /un évènement / une étape/ une ou des personne(s) clé(s). </string>
+    <string name="q4">7. Quels obstacles avez-vous rencontré ? Comment les avez-vous surmontés ?</string>
+    <string name="q5">8. Le projet a-t-il connu des échecs ? A quel niveau et pourquoi ?</string>
+    <string name="q6">9. Quels sont les succès principaux ?</string>
+    <string name="q7">10. Passage à l’échelle : y a-t-il eu des adoptions spontanées ou un passage à l’échelle ? Ou voyez-vous des pistes, des potentiels de passage à l’échelle ?</string>
+    <string name="q8">11. Quelles sont les leçons apprises après 1, 2 ou 3 ans du projet ? Qu’est ce qui a été inattendu ?
+Quelles conclusions tirez-vous? Quelles perspectives ouvrent-t-elles ?
+</string>
+    <string name="q9">12. Racontez une histoire vécue qui illustre un changement ou un apprentissage (vécu de bénéficiaires, du partenaire local, etc.)</string>
+    <string name="q10">13. Qu’est-ce que vous voudriez partager avec d’autres organisations? En quoi cette expérience peut-elle être utile pour d’autres ? </string>
+    <string name="q11">14. Qu’avez-vous mis en place pour partager cette expérience?</string>
+    <string name="q12">15. Une évaluation du projet a-t-elle eu lieu ? Interne ou externe ? A quelle date ? Si n’a pas encore eu lieu mais est prévue : Des termes de référence ont-ils été rédigés ? Un évaluateur a-t-il été choisi ?Quelle date ?</string>
+    <string name="q13">16. Quelles sont les principales recommandations et implications pour une prochaine phase ou des projets similaires ?</string>
+
+    <string name="view_pdf">Voir fichier PDF</string>
+    <string name="add_img">Ajouter pièce jointe</string>
+    <string name="create_pdf">Générer Pdf</string>
+
+    <string name="error_pdf">vous n\'avez pas d\'application pour visionner le PDF</string>
+    <string name="pdf_title">Rapport de Projet</string>
+
+    <string name="annexe">Annexe</string>
+
+
+    //Home Activity
+    <string name="gps">Cette application a besoin du GPS pour bien fonctionner, voulez-vous l\'activer?</string>
+    <string name="yes">Oui</string>
+    <string name="collection_user_locations">User Locations</string>
+
+    //GeoLocationActivity
+    <string name="no">Non</string>
+    <string name="you">Vous êtes ici</string>
+    <string name="determine_route">Déterminer route à </string>
+    <string name="duree">Durée: </string>
+    <string name="trip">Parcours # </string>
+    <string name="map_error">Impossible d\'ouvrir carte</string>
+    <string name="open_google_map">Ouvrir Google Maps?</string>
+
+
+</resources>

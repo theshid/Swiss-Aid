@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/unicef"
+    tools:context=".UI.ChangeNameActivity">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_keyboard_backspace_24"
+        app:popupTheme="@style/Theme.Popup"
+        app:theme="@style/Theme.GuidelinesCompat.Toolbar"
+        app:title="@string/toolbar_title_change_name"
+        app:titleTextColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descrip_name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/textview_current_name_change_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_name"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        tools:text="Shid Insa"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/EditTextTheme">
+        <EditText android:id="@+id/new_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/new_name"
+            android:textColor="@color/white"
+            tools:text="Shid Insa"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:id="@+id/btnUpdateName"
+        android:textColor="@color/black"
+        android:text="@string/btn_update_name_changeName"/>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar_change_name_activity"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>

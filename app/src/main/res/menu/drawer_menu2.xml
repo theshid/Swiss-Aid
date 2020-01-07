@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/geolocation"
+            android:icon="@drawable/ic_action_location"
+            android:title="@string/geolocation"/>
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/title_home"/>
+
+    </group>
+
+    <item android:title="@string/title_menu_nav">
+        <menu>
+            <item android:id="@+id/nav_switch"
+                app:actionLayout="@layout/layout_switch"
+                android:title="@string/switch_title"
+                android:icon="@drawable/ic_item1"/>
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/baseline_power_settings_new_24"
+                android:title="@string/log_out" />
+
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>
