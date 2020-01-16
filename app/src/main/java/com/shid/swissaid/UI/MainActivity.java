@@ -68,6 +68,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 import static com.shid.swissaid.Constant.Constant.PERMISSIONS_REQUEST_ENABLE_GPS;
@@ -149,10 +150,10 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     }
 
-    private void setSwitchStatus(){
-        if (isLocationServiceRunning()){
+    private void setSwitchStatus() {
+        if (isLocationServiceRunning()) {
             animatedSwitch.setChecked(true);
-        } else{
+        } else {
             animatedSwitch.setChecked(false);
         }
     }
@@ -179,7 +180,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     if (file.exists()) {
                         Glide.with(getApplicationContext()).load(file).into(image_nav);
                     }
-                }else {
+                } else {
                     Glide.with(getApplicationContext()).load(user.getImageUrl()).into(image_nav);
                 }
             }
@@ -234,7 +235,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     if (file.exists()) {
                         Glide.with(getApplicationContext()).load(file).into(profile_image);
                     }
-                }else {
+                } else {
                     Glide.with(getApplicationContext()).load(user.getImageUrl()).into(profile_image);
                 }
             }
@@ -413,7 +414,6 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     }
 
 
-
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -432,16 +432,20 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                 startActivity(intent);
                 break;
             case R.id.geolocation:
-               // Snackbar.make(parentLayout, getString(R.string.feature), Snackbar.LENGTH_SHORT).show();
+                // Snackbar.make(parentLayout, getString(R.string.feature), Snackbar.LENGTH_SHORT).show();
                 final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
                 if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
                     buildAlertMessageNoGps();
                     return false;
-                } else{
+                } else {
                     passDataToGeolocationActivity();
 
                 }
+                break;
+            case R.id.menu_setting:
+                Intent intent1 = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.exit:
                 logOut();
@@ -526,15 +530,15 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         reference.updateChildren(hashMap);
     }
 
-    private void startLocationService(){
-        if(!isLocationServiceRunning()){
+    private void startLocationService() {
+        if (!isLocationServiceRunning()) {
             Intent serviceIntent = new Intent(this, LocationService.class);
 //        this.startService(serviceIntent);
 
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O){
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
 
                 MainActivity.this.startForegroundService(serviceIntent);
-            }else{
+            } else {
                 startService(serviceIntent);
             }
         }
@@ -542,8 +546,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     private boolean isLocationServiceRunning() {
         ActivityManager manager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
-        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)){
-            if("com.shid.swissaid.Services.LocationService".equals(service.service.getClassName())) {
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if ("com.shid.swissaid.Services.LocationService".equals(service.service.getClassName())) {
                 Log.d(TAG, "isLocationServiceRunning: location service is already running.");
                 return true;
             }
@@ -563,7 +567,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(mUserListEventListener != null){
+        if (mUserListEventListener != null) {
             mUserListEventListener.remove();
         }
     }

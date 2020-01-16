@@ -416,5 +416,26 @@
     <string name="map_error">Couldn\'t open map</string>
     <string name="open_google_map">Open Google Maps?</string>
 
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+
+
+
+    //Preference
+    <string name="edit_name">Edit Name</string>
+    <string name="edit_name_summary">Click to edit name</string>
+    <string name="edit_password_summary">Click to edit password</string>
+    <string name="edit_password">Edit Password</string>
+    <string name="edit_lang">Change Language</string>
+    <string name="edit_lang_summary">Click to change language</string>
+
 
 </resources>

@@ -22,6 +22,10 @@
                 android:title="@string/switch_title"
                 android:icon="@drawable/ic_item1"/>
             <item
+                android:id="@+id/menu_setting"
+                android:icon="@drawable/setting_icon"
+                android:title="@string/action_settings" />
+            <item
                 android:id="@+id/exit"
                 android:icon="@drawable/baseline_power_settings_new_24"
                 android:title="@string/log_out" />

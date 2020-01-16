@@ -24,8 +24,18 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
-        tools:replace="android:appComponentFactory">
-        <activity android:name=".UI.DraftActivity"></activity>
+        tools:replace="android:appComponentFactory"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".UI.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".UI.HomeActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shid.swissaid.UI.HomeActivity" />
+        </activity>
+        <activity android:name=".UI.DraftActivity" />
         <activity android:name=".UI.GeolocationActivity" />
         <activity android:name=".UI.PdfUi.FormActivity" />
         <activity android:name=".UI.FullScreenImageActivity" />
@@ -49,10 +59,20 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".UI.ChangePasswordActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.shid.swissaid.SETTING_START_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".UI.ChangeNameActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.shid.swissaid.SETTING_START_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".UI.ResetPasswordActivity"
             android:screenOrientation="portrait" />

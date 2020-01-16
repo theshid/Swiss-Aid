@@ -5,20 +5,25 @@
         <item
             android:id="@+id/geolocation"
             android:icon="@drawable/ic_action_location"
-            android:title="@string/geolocation"/>
+            android:title="@string/geolocation" />
         <item
             android:id="@+id/home"
             android:icon="@drawable/home_icon"
-            android:title="@string/title_home"/>
+            android:title="@string/title_home" />
 
     </group>
 
     <item android:title="@string/title_menu_nav">
         <menu>
-            <item android:id="@+id/nav_switch"
-                app:actionLayout="@layout/layout_switch"
+            <item
+                android:id="@+id/nav_switch"
+                android:icon="@drawable/ic_item1"
                 android:title="@string/switch_title"
-                android:icon="@drawable/ic_item1"/>
+                app:actionLayout="@layout/layout_switch" />
+            <item
+                android:id="@+id/menu_setting"
+                android:icon="@drawable/setting_icon"
+                android:title="@string/action_settings" />
             <item
                 android:id="@+id/exit"
                 android:icon="@drawable/baseline_power_settings_new_24"

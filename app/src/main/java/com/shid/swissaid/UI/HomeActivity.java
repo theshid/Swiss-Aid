@@ -83,7 +83,7 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
 
     //final Fragment fragment2 = new ReportFragment();
     final Fragment fragment3 = new UploadFragment();
-    final Fragment fragment4 = new SettingFragment();
+    //final Fragment fragment4 = new SettingFragment();
     final Fragment fragment1 = new CustomFragment();
     final FragmentManager fm = getSupportFragmentManager();
     Fragment active = fragment1;
@@ -134,14 +134,14 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
 
 
         if (savedInstanceState == null) {
-            fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment4).commit();
+            //fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment4).commit();
             fm.beginTransaction().add(R.id.main_container, fragment3, "3").hide(fragment3).commit();
             //fm.beginTransaction().add(R.id.main_container, fragment2, "slide2").hide(fragment2).commit();
             fm.beginTransaction().add(R.id.main_container, fragment1, "1").commit();
 
 
         } else {
-            fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment4).commit();
+          //  fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment4).commit();
             fm.beginTransaction().add(R.id.main_container, fragment3, "3").hide(fragment3).commit();
             //   fm.beginTransaction().add(R.id.main_container, fragment2, "slide2").hide(fragment2).commit();
             fm.beginTransaction().add(R.id.main_container, fragment1, "1").hide(fragment1).commit();
@@ -667,12 +667,14 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
                 active = fragment3;
                 saved_fragment = fragment3;
                 return true;
-
+/*
             case R.id.navigation_setting:
                 fm.beginTransaction().hide(active).show(fragment4).commit();
                 active = fragment4;
                 saved_fragment = fragment4;
                 return true;
+
+ */
         }
         return false;
     };
@@ -700,6 +702,10 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
                 }
 
 
+                break;
+            case R.id.menu_setting:
+                Intent intent1 = new Intent(HomeActivity.this,SettingsActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.exit:
                 logOut();

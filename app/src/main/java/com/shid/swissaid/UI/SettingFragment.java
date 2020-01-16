@@ -75,7 +75,7 @@ public class SettingFragment extends Fragment {
         //Display correct header depending on the language
         displayHeader();
 
-        listView = (ListView)view.findViewById(R.id.listView_setting);
+        listView = view.findViewById(R.id.listView_setting);
         listView.setAdapter(settingAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -160,8 +160,8 @@ public class SettingFragment extends Fragment {
         LayoutInflater inflater = LayoutInflater.from(getContext());
         View register_layout = inflater.inflate(R.layout.layout_lg,null);
 
-        final AppCompatImageView france = (AppCompatImageView) register_layout.findViewById(R.id.btn_fr_lg);
-        final AppCompatImageView en = (AppCompatImageView) register_layout.findViewById(R.id.btn_en_lg);
+        final AppCompatImageView france =  register_layout.findViewById(R.id.btn_fr_lg);
+        final AppCompatImageView en =  register_layout.findViewById(R.id.btn_en_lg);
 
 
 

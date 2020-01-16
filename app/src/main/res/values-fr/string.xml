@@ -402,4 +402,23 @@ Quelles conclusions tirez-vous? Quelles perspectives ouvrent-t-elles ?
     <string name="open_google_map">Ouvrir Google Maps?</string>
 
 
+    //Preference
+    <string name="edit_name">Changer Nom</string>
+    <string name="edit_name_summary">Appuyez pour changer votre nom</string>
+    <string name="edit_password_summary">Appuyez pour changer votre mot de passe</string>
+    <string name="edit_password">Modifier mot de passe</string>
+    <string name="edit_lang">Modifier la Langue</string>
+    <string name="edit_lang_summary">Appuyez pour changer la langue</string>
+
+    <string name="title_activity_settings">Paramètres</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Votre signature</string>
+    <string name="reply_title">Réponse par défaut</string>
+
+
 </resources>
